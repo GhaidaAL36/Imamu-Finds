@@ -8,7 +8,7 @@ header{
   justify-content: space-between;
   box-shadow: 0 1px 6px rgb(32 33 36 / 10%);
   transition: all .50s ease;
-  padding: 20px 14%;
+  padding: 20px 5%;
   width: 100%;
   background-color: #edede9;
   font-size: 18px;
@@ -31,7 +31,7 @@ header{
 .menu a{
   font-size: 15px;
   font-weight: 500;
-  margin: 10px 22px;
+  margin: 10px 15px;
   transition: all .50s ease;
   color: #d06b7d;
   font-size: 18px;
@@ -42,7 +42,7 @@ header{
 }
 
 section{
-  padding: 60px 15% 70px;
+  padding: 60px 5% 70px;
 }
 
 .head-text{
@@ -89,18 +89,20 @@ section{
   justify-content: space-between;
   box-shadow: 0 1px 6px rgb(32 33 36 / 10%);
   transition: all .50s ease;
-  padding: 20px 14%;
+  padding: 20px 5%;
   width: 100%;
   background-color: #edede9;
   font-size: 18px;}
 
 .head-menu {
-  
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 .head-menu li {
   display: inline-block;
-  margin: 5px 15px;
+  margin: 5px 10px;
 }
 
 .head-menu a {
@@ -110,7 +112,7 @@ section{
   transition: all .50s ease;
   border-radius: 8px;
   border: 1px solid #eaeae9;
-  padding: 10px 20px;
+  padding: 10px 15px;
   display: block;
 }
 
@@ -118,4 +120,54 @@ section{
   color: #ffccd5;
   background-color: #d06b7d;
   border-color: #ebb9c2;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 20px 10%;
+  }
+
+  .head-text h1 {
+    font-size: 40px;
+  }
+
+  .head-text p {
+    font-size: 16px;
+  }
+
+  .head-menu-container {
+    padding: 20px 10%;
+  }
+
+  .head-menu {
+    flex-direction: column; /* Stack menu items vertically */
+  }
+
+  .head-menu li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .head-text h1 {
+    font-size: 30px;
+  }
+
+  .head-text p {
+    font-size: 14px;
+  }
+
+  .head-menu a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 }
