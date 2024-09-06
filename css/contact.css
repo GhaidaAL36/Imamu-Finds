@@ -58,3 +58,10 @@
 .contact-item a:hover {
   color: #ffccd5;
 }
+
+@media (max-width: 768px) {
+  .contact-section{
+    margin-top: 190px;
+    padding: 20px;
+  }
+}
