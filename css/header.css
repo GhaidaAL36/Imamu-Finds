@@ -11,7 +11,7 @@ header{
   padding: 20px 14%;
   width: 100%;
   background-color: #edede9;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .logo-text{
@@ -120,10 +120,61 @@ section{
   border-color: #ebb9c2;
 }
 
+#menu-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
 
-@media (max-width: 768px) {
-  header {
-    font-size: 14px;
+@media (max-width: 920px){
+  #menu-icon{
     display: block;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background: #d06b7d;
+    color: #edede9;;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .menu{
+    position: absolute;
+    top: -800px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: #fff0f3;
+    transition: all .50s ease;
+  }
+  .menu a{
+    display: block;
+    padding: 5px;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .50s ease;
+  }
+  .menu a:hover{
+    background: #d06b7d;
+  }
+  .menu.active{
+    top: 100%;
   }
 }
+
+
+
