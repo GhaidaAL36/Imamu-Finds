@@ -1,7 +1,8 @@
 .page-container{
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 100px;
+  padding: 0 10px;
 }
 
 .title-box{
@@ -12,6 +13,9 @@
   padding: 10px 15px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
 }
 
 .title-box:hover{
@@ -96,17 +100,60 @@
 }
 
 @media (max-width: 768px) {
+  .page-container {
+    margin-top: 180px;
+    padding: 0 20px;
+  }
+
   .content-container {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 
   .content-container img {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
 
   .content-box {
     max-width: 100%;
+  }
+
+  .content-box .title {
+    font-size: 20px;
+  }
+
+  .content-box .content {
+    font-size: 14px;
+  }
+
+  .content-btn, .services-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    margin-top: 80px;
+  }
+
+  .title-box {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .content-box .title {
+    font-size: 18px;
+  }
+
+  .content-box .content {
+    font-size: 12px;
+  }
+
+  .content-btn, .services-btn {
+    padding: 8px 16px;
+    font-size: 16px;
   }
 }
