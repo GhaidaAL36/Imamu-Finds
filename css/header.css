@@ -133,6 +133,7 @@ section{
 
   header {
     padding: 20px 10%;
+    margin-bottom: 190px;
   }
 
   .head-text h1 {
@@ -152,8 +153,6 @@ section{
 }
 
 @media (max-width: 480px) {
-  .head-menu {
-  }
 
   .head-menu a {
     font-size: 16px; 
