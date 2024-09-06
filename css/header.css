@@ -11,7 +11,7 @@ header{
   padding: 20px 14%;
   width: 100%;
   background-color: #edede9;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .logo-text{
@@ -122,40 +122,8 @@ section{
 
 
 @media (max-width: 768px) {
-  .menu {
-    display: block;
-  }
-
-  .menu a {
-    display: block;
-    margin: 10px 0;
-  }
-
   header {
-    padding: 20px 10%;
-    margin-bottom: 190px;
-  }
-
-  .head-text h1 {
-    font-size: 40px;
-  }
-
-  .head-text p {
-    font-size: 16px;
-  }
-
-  .head-menu-container {
-    padding: 20px 10%;
-  }
-
-  .head-menu {
-  }
-}
-
-@media (max-width: 480px) {
-
-  .head-menu a {
-    font-size: 16px; 
-    padding: 8px 12px; 
+    font-size: 14px;
+    display: block;
   }
 }
